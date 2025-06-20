@@ -23,13 +23,24 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px 40px;
+      padding: 0px 0px;
       background: rgba(65, 63, 63, 0.5);
       position: fixed;
       top: 0;
       width: 100%;
       z-index: 999;
     }
+    .logo {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+}
+
+.logo-img {
+  height: 90px;
+  width: 90px;
+  object-fit: contain;
+}
 
     nav .logo {
       font-size: 1.8rem;
@@ -54,7 +65,7 @@
     }
 
     nav ul li a:hover, #darkmode-toggle:hover {
-      color: #8eabea;
+      color: #f80000;
     }
 
     .intro {
@@ -81,6 +92,7 @@
       padding: 80px 40px;
       text-align: center;
       border-top: 1px solid #f7f7f7;
+     
     }
 
     section h2 {
@@ -151,9 +163,9 @@
     }
 
     .member-card img {
-      width: 90px;
-      height: 90px;
-      border-radius: 20%;
+      width: 120px;
+      height: 200px;
+      border-radius: 10%;
       object-fit: cover;
       margin-bottom: 15px;
       border: 2px solid #ffffff;
@@ -176,13 +188,17 @@
   <div id="noise"></div>
 
   <nav>
-    <div class="logo">DarkLearners</div>
+    
+    <div class="logo">
+  <img src="Images/DarkLear-removebg-preview.png" alt="Logo" class="logo-img">
+  DarkLearners
+</div>
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#members">Members</a></li>
       <li><a href="#writeups">Writeups</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li><button id="darkmode-toggle">🌙</button></li>
+      <li><button id="darkmode-toggle"></button></li>
     </ul>
   </nav>
 
@@ -200,33 +216,40 @@
     <h2>Members</h2>
     <div class="members-grid">
       <div class="member-card">
-        <img src="https://avatars.githubusercontent.com/u/583231?v=4" alt="Gaurav">
-        <h3>Gaurav Sangwan</h3>
+        <img src="/Images/dgb50a8-b5e1fc42-0cd9-44f7-89a7-c4ab7296859c.jpg" alt="Gaurav">
+        <h3>IronHawk</h3>
       </div>
       <div class="member-card">
-        <img src="https://avatars.githubusercontent.com/u/199349?v=4" alt="Kali">
-        <h3>Kali Dev</h3>
+        <img src="/Images/bd83e992ddcdd16aa08886e2045a9469.jpg" alt="Kali">
+        <h3>Perseus</h3>
       </div>
     </div>
   </section>
 
   <section id="writeups">
     <h2>Writeups</h2>
-    <p>We dissect challenges with precision. Expect deep dive walkthroughs and unique perspectives.</p>
+    <div class="writeups-list">
+  <p>Download/Open our writeups:</p><br><br>
+
+  <a href="writeups/SHELL_Writeup_TH.pdf" class="writeup-btn" style="color:white" download>Treasure Hunt'25</a><br>
+
+</div>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: darklearners@ctf.team<br>Twitter: @DarkLearnersCTF</p>
+    <p>No buttons here, no click to send,
+Just riddles twisting to the end.
+Decrypt the dark, unveil the path</p><br>c2FuZ3dhbjdnYXVyYXZAZ21haWwuY29tDQpyYWhtYW5heWFuNTNAZ21haWwuY29t
   </section>
 
   <footer>
-    <p>&copy; 2025 DarkLearners CTF Team</p>
+    <p>&copy; 2025 DarkLearners </p>
   </footer>
 
   <script>
     new Typed("#typed", {
-      strings: ["We are DarkLearners.", "We capture the flag.", "Hack. Learn. Repeat."],
+      strings: ["We are DarkLearners.", "We capture the flag.", "Hack. Learn. Repeat.", "Andhera Kayam rahe."],
       typeSpeed: 50,
       backSpeed: 25,
       backDelay: 2000,
