@@ -199,6 +199,12 @@
       background-color: white;
       color: black;
     }
+    nav ul li:not(:last-child)::after {
+  content: "|";
+  color: #999;
+  margin: 0 6px;
+  font-weight: normal;
+}
 
 
 
@@ -302,7 +308,7 @@
 
   <section id="about">
     <h2>About</h2>
-    <p>We are DarkLearners – CTF warriors who breathe binary, exploit web flaws, and master every flag domain.</p>
+    <p>We are DarkLearners, CTF warriors who breathe binary, exploit web flaws, and master every flag domain.</p>
   </section>
 
   <section id="members">
