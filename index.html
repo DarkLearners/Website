@@ -199,12 +199,7 @@
       background-color: white;
       color: black;
     }
-    nav ul li:not(:last-child)::after {
-  content: "|";
-  color: #999;
-  margin: 0 1px;
-  font-weight: normal;
-}
+   
 
 
 
@@ -292,9 +287,9 @@
   DarkLearners
 </div>
     <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#members">Members</a></li>
-      <li><a href="#writeups">Writeups</a></li>
+      <li><a href="#about">About</a><span class="divider">|</span></li>
+      <li><a href="#members">Members</a><span class="divider">|</span></li>
+      <li><a href="#writeups">Writeups</a><span class="divider">|</span></li>
       <li><a href="#contact">Contact</a></li>
       <li><button id="darkmode-toggle"></button></li>
     </ul>
