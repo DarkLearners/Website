@@ -199,6 +199,78 @@
       background-color: white;
       color: black;
     }
+
+
+
+    @media screen and (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    padding: 10px 20px;
+  }
+
+  .logo-img {
+    height: 60px;
+    width: 60px;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  .intro {
+    min-height: 100svh;
+    padding: 120px 20px 60px;
+    text-align: center;
+  }
+
+  .intro h1 {
+    font-size: clamp(2rem, 6vw, 3rem);
+  }
+
+  .intro p {
+    font-size: clamp(1rem, 4vw, 1.2rem);
+  }
+
+  .join-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin-top: 20px;
+  }
+
+  .members-grid {
+    gap: 20px;
+  }
+
+  .member-card {
+    width: 90%;
+    height: auto;
+  }
+
+  .member-card img {
+    width: 100px;
+    height: 160px;
+  }
+
+  section {
+    padding: 60px 20px;
+  }
+}
   </style>
 </head>
 <body>
